@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PITH Traffic</string>
+    <!-- Default line set head page. -->
+    <string name="head">ป้าย จราจร</string>
+</resources>
