@@ -5,9 +5,10 @@
 
     <!-- Start Default line set all page. -->
     <dimen name="h1">50sp</dimen>  <!-- sp  =  px -->
-    <dimen name="h2">20sp</dimen>
+    <dimen name="h2">25sp</dimen>
     <dimen name="my_margin">15dp</dimen>
-    <dimen name="icon">100dp</dimen>
+    <dimen name="image">220dp</dimen>
+    <dimen name="icon">110dp</dimen>
     <!--end Default line set all page. -->
 
 </resources>
