@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private void createListView() {
 
         //Assige icon  แหล่งกำเนิดภาพ
-        int[] intIcon = {R.drawable.traffic_01, R.drawable.traffic_02,
+        final int[] intIcon = {R.drawable.traffic_01, R.drawable.traffic_02,
                 R.drawable.traffic_03, R.drawable.traffic_04,
                 R.drawable.traffic_05, R.drawable.traffic_06,
                 R.drawable.traffic_07, R.drawable.traffic_09,
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.traffic_19, R.drawable.traffic_20};
 
         //Assige title
-        String[] StrTitle = new String[20]; //ให้จำ 20 ตัวเลย
+        final String[] StrTitle = new String[20]; //ให้จำ 20 ตัวเลย
         StrTitle[0] = "ห้ามเลี้ยวซ้าย";
         StrTitle[1] = "ห้ามเลี้ยวขวา";
         StrTitle[2] = "ตรง";
@@ -70,6 +71,22 @@ public class MainActivity extends AppCompatActivity {
 
         MyAdapter objMyAdapter = new MyAdapter(MainActivity.this, intIcon, StrTitle);
         trafficListView.setAdapter(objMyAdapter);
+
+        //Active When Click ListView ,setOnItemClickListener is ,position is array[0,..,19]
+        trafficListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                //โยน data ไป อีก หน้า ย้าย Main ไปหา detail
+                Intent objIntent = new Intent(MainActivity.this,DetailActivity.class);
+                objIntent.putExtra("Title", StrTitle[position]);
+                objIntent.putExtra("Image", intIcon[position]);
+                objIntent.putExtra("Index", position);
+                startActivity(objIntent);
+            }//event
+        });
+
+
     }
 
 
