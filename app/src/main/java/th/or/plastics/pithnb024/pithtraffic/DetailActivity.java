@@ -42,6 +42,8 @@ public class DetailActivity extends AppCompatActivity {
 
 
 
+
+
     }
 
     private void bindWidget() {
