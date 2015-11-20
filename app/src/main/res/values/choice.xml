@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="times1">
+        <item>ก ข้อเลือกที่ 1 </item>
+        <item>ข ข้อเลือกที่ 1 </item>
+        <item>ค ข้อเลือกที่ 1 </item>
+        <item>ง ข้อเลือกที่ 1 </item>
+    </string-array>
+
+    <string-array name="times2">
+        <item>ก ข้อเลือกที่ 2 </item>
+        <item>ข ข้อเลือกที่ 2 </item>
+        <item>ค ข้อเลือกที่ 2 </item>
+        <item>ง ข้อเลือกที่ 2 </item>
+    </string-array>
+
+    <string-array name="times3">
+        <item>ก ข้อเลือกที่ 3 </item>
+        <item>ข ข้อเลือกที่ 3 </item>
+        <item>ค ข้อเลือกที่ 3 </item>
+        <item>ง ข้อเลือกที่ 3 </item>
+    </string-array>
+
+    <string-array name="times4">
+        <item>ก ข้อเลือกที่ 4 </item>
+        <item>ข ข้อเลือกที่ 4 </item>
+        <item>ค ข้อเลือกที่ 4 </item>
+        <item>ง ข้อเลือกที่ 4 </item>
+    </string-array>
+
+
+    <string-array name="times5">
+        <item>ก ข้อเลือกที่ 5 </item>
+        <item>ข ข้อเลือกที่ 5 </item>
+        <item>ค ข้อเลือกที่ 5 </item>
+        <item>ง ข้อเลือกที่ 5 </item>
+    </string-array>
+</resources>

@@ -2,4 +2,8 @@
     <string name="app_name">PITH Traffic</string>
     <!-- Default line set head page. -->
     <string name="head">ป้าย จราจร</string>
+    <string name="choice1">ห้ามเลี้ยวซ้าย</string>
+    <string name="choice2">ให้เลี้ยวซ้าย</string>
+    <string name="choice3">ห้ามเลี้ยวขวา</string>
+    <string name="choice4">ไม่มีข้อถูก</string>
 </resources>

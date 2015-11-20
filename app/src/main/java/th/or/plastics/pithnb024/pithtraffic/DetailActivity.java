@@ -1,7 +1,9 @@
 package th.or.plastics.pithnb024.pithtraffic;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,9 +24,17 @@ public class DetailActivity extends AppCompatActivity {
         //show view
         showView();
 
-
-
     }//Main Method
+
+    //public มองเห็นจากภายนอก
+    public void clickBack(View view) {
+        finish(); // กลับไปที่หน้าเดิมที่มันมีอยู่
+    }
+
+    public void clickExercise(View view) {
+        startActivity(new Intent(DetailActivity.this,ExerciseActivity.class));
+    }
+
 
     private void showView() {
         //show Title
@@ -39,14 +49,6 @@ public class DetailActivity extends AppCompatActivity {
         int intIndex = getIntent().getIntExtra("Index", 0);
         String[] strDetail = getResources().getStringArray(R.array.detail); //detail.xml มาแสดงข้อมูล 20ตัว
         detailTextView.setText(strDetail[intIndex]);//ตำแหน่งที่1 มาโชว์
-
-
-
-
-
-
-
-
 
     }
 
